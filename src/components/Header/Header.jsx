@@ -30,7 +30,7 @@ const Header = () => {
               <Link to={'/'}>New Arrivals</Link>
               <Link to={'/'}>Brands</Link>
             </div>
-            <input className={s.search} type="text" />
+            <input placeholder='Search for products...' className={s.search} type="text" />
             <div className={s.box}>
               <img src="/icon-1.svg" alt="" />
               <img src="/icon-2.svg" alt="" />

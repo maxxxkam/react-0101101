@@ -1,5 +1,63 @@
-.header{
-    border: 1px solid black;
-    background-color: pink;
+.hero {
+  background-color: #f2f0f1;
+  margin-top: 20px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero__card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  p {
+    opacity: 50%;   
+  }
+
+  h1 {
+    font-size: clamp(1rem, -0.091rem + 5.45vw, 4rem);
+    font-weight: 900;
+    font-family: "Candal", sans-serif; 
+  }
+  button{
+    max-width: 200px;
+    padding: 15px;
+    border-radius: 60px;
+    border: none;
+    background-color: #000;
+    color: white;
+
+  }
+}
+.hero__card2{
+    max-width: 650px;
+    img{
+        width: 100%;
+    }
+}
+
+.boxes{
+    display: flex;
+    gap: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    height: 70px;
+    background-color: rgb(182, 181, 181);
+    width: 1px;
+}
