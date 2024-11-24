@@ -7,6 +7,7 @@ const Footer = () => {
     <footer className={s.footer}>
         <div className="container">
             <div className={s.wrapper}>
+                <div className={s.wrap}>
                 <div className={s.card1}>
                   <h2>SHOP.CO</h2>
                   <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
@@ -16,6 +17,7 @@ const Footer = () => {
                     <img src="/footer-img3.svg" alt="" />
                     <img src="/footer-img4.svg" alt="" />
                   </div>
+                </div>
                 </div>
 
                 <div className={s.card2}>

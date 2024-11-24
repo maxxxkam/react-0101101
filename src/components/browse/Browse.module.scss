@@ -20,6 +20,10 @@
             font-weight: 700;
             font-size: clamp(1rem, 0.545rem + 2.27vw, 2.25rem);
         }
+        display: grid;
+    @media (max-width:700px) {
+        grid-template-columns: 1fr;
+    }
     }  
  
 }

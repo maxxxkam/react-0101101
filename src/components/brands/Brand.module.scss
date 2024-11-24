@@ -3,10 +3,14 @@
   align-items: center;
   justify-content: center;
   background-color: #000000;
+  
 }
 
 .image{
   display: flex;
   gap: 100px;
   padding: 45px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }

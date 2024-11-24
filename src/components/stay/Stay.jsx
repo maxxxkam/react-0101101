@@ -9,7 +9,7 @@ const Stay = () => {
         <div className="container">
             <div className={s.wrapper}>
                 <div className={s.card1}>
-                    <h2>STAY UPTO DATE ABOUT <br /> OUR LATEST OFFERS</h2>
+                    <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
                 </div>
                 <div className={s.card2}>
                     <input placeholder='Enter your email address'  type="text" /> 

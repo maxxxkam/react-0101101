@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './Header.module.scss';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const [isActive, setIsActive] = useState(false)
+  const toggleMenu = () => {
+    setIsActive(!isActive)
+  }
   return (
     <>
       <header className={s.header}>
         <div className="container">
           <nav className={s.nav}>
+            <img className={s.burger} onClick={toggleMenu} src="/burger-img.svg" alt="" />
             <Link to={'/'} className={s.logo}>
               SHOP.CO
             </Link>
-            <div className={s.menu}>
+            <div className={`${s.menu} ${isActive ? s.active : null}`}>
               <Link to={'/'}>
                 Shop
                 <svg
