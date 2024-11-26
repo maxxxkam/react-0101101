@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .logo{
@@ -74,5 +75,50 @@
     display: none;
     @media (max-width:700px) {
         display: block;
+    }
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &:hover{
+        div{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        svg{
+            rotate: 180deg;
+        }
+    }
+
+    div{
+        top: 25px;
+        right: 0;
+        position: absolute;
+        background-color: #f0f0f0;
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.267);
+        border-radius: 6px;
+
+        transition: 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        a{
+            padding: 4px 10px;
+            transition: 0.4s;
+
+            &:hover{
+                background-color: lightgray;
+            }
+
+        }
+
     }
 }
