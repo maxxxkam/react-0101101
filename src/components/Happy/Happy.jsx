@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Happy.module.scss";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import Card2 from "../Card2/Card2";
+import Card2 from "../card2/Card2";
 
 const Happy = () => {
   return (
