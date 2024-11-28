@@ -6,6 +6,11 @@
   display: flex;
   justify-content: space-between;
   margin: 40px;
+  @media (max-width:700px) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
 
@@ -14,6 +19,9 @@
   gap: 8px;
   align-items: center;
   justify-content: center;
+  h2{
+    font-size: clamp(1.25rem, 1.159rem + 0.45vw, 1.5rem);
+  }
   p{
     opacity: 50%;
   }
@@ -24,6 +32,12 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  @media (max-width:700px) {
+    .btn_1, .btn_2, .btn_3, .btn4{
+      padding: 10px;
+    }
+   
+  }
 }
 
 .btn_1{
@@ -40,6 +54,9 @@
   border-radius: 60px;
   gap: 10px;
   border: none;
+  @media (max-width:700px) {
+    display: none;
+  }
 }
 
 .btn_3{
@@ -60,6 +77,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+  @media (max-width:700px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .wrapper{
