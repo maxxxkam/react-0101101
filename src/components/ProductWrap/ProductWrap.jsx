@@ -1,5 +1,7 @@
 import React from 'react'
 import s from './Product.module.scss'
+import Reviews from '../Reviews/Reviews'
+import Also from '../Also/Also'
 const ProductWrap = ({product}) => {
   return (
     <>
@@ -42,8 +44,20 @@ const ProductWrap = ({product}) => {
                                 <button>X-large</button>
                             </div>
                         </div>
+                        <div>
+                            <div className={s.btn1}>
+                            <button >-</button>
+                            <p>1</p>
+                            <button >+</button>
+
+                            </div>
+                            <button className={s.btn2}>Add to cart</button>
+                        </div>
                     </div>
             </div>
+
+            <Reviews/>
+            <Also/>
         </div>
     </section>
     </>
