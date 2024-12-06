@@ -4,7 +4,8 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import Card from '../Card/Card';
 import Products from '/public/products.json';
 import { Link } from 'react-router-dom';
-import { useAppContext } from '../../context';
+import { useAppContext } from '../../Context';
+
 
 const Category = () => {
   const { visibleProducts, loadMoreProducts } = useAppContext();
